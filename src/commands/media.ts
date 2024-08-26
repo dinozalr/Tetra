@@ -89,11 +89,13 @@ const supportedPlatforms: PlatformHandler[] = [
     color: 0x9146ff,
     emote: "<:_tetra_symbol_twitch:1245824662177448036>",
   },
-  // {
-  //   name: "YouTube",
-  //   handler: handleYoutubeMedia,
-  //   hostnames: ["youtube.com", "youtu.be", "www.youtube.com"],
-  // },
+  {
+    name: "YouTube",
+    handler: handleYoutubeMedia,
+    hostnames: ["youtube.com", "youtu.be", "www.youtube.com"],
+    color: 0xff0000,
+    emote: "<:_tatra_symbol_youtube:1277426950100619325>"
+  },
   {
     name: "Streamable",
     handler: handleStreamableMedia,
@@ -139,7 +141,7 @@ export default {
     if (!input) return;
 
     const { fileLimit } = guildParsePremium(interaction.guild!);
-    const { hasPremium } = parseEntitlementsData(interaction);
+    const hasPremium = true;
     const feedback = new FeedbackManager(interaction);
 
     const itemUrl = input

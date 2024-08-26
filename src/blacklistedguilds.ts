@@ -19,5 +19,5 @@ class BlacklistedGuild {
 }
 
 export const BLACKLISTED_GUILDS: BlacklistedGuild[] = [
-  new BlacklistedGuild("529630064191602720", new Date(1717497480000)),
+  new BlacklistedGuild("1031909216555896852", new Date(1717497480000)),
 ];

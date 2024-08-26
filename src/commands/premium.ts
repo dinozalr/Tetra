@@ -18,7 +18,10 @@ const importEmote = {
       parseEntitlementsData(interaction);
 
     if (!hasPremium) {
-      return feedback.info("You don't have access to premium features.");
+      const videoUrl = "https://i.nuuls.com/XnCNA.mp4";
+      return feedback.sendMessage({
+        files: [videoUrl]
+      })
     }
 
     const premiumDetails: EmbedData = { fields: [] };

@@ -6,7 +6,6 @@ import {
   ExecutableSelectMenu,
 } from "./types";
 import { FeedbackManager } from "./utils/managers/FeedbackManager";
-import interactionLogger from "./utils/interactionLoggers";
 import { BANNEDLIST } from "./bannedusers";
 import { TetraEmbed } from "./utils/embedMessages/TetraEmbed";
 import { env } from "./env";
@@ -55,7 +54,6 @@ const interactionHandler = async (
   }
 
   if (interaction.isCommand()) {
-    interactionLogger(interaction, client);
 
     const command = client.commands.get(
       interaction.commandName
@@ -97,10 +95,6 @@ const interactionHandler = async (
     if (interactionTaskId === "cancelAction") {
       taskDetails = {
         action: "cancelAction",
-      };
-    } else if (interactionTaskId === "errorlog") {
-      taskDetails = {
-        action: "errorLog",
       };
     } else if (interactionTaskId === "premiumoffering") {
       taskDetails = {

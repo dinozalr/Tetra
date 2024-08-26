@@ -7,17 +7,6 @@ import { supportedMediaPlatforms } from "../commands/media";
 
 type T = TetraEmbedContent;
 
-const loadingEmotes = [
-  "<a:tetraLoading:1165905111432839171>",
-  "<a:tetraLoading:1165904467120627723>",
-  "<a:tetraLoading:1165904251252391997>",
-  "<a:tetraLoading:1165904242997985311>",
-  "<a:tetraLoading:1165904168205156372>",
-  "<a:tetraLoading:1165904037800050788>",
-];
-export const getRandomLoadingEmote = () =>
-  loadingEmotes[Math.floor(Math.random() * loadingEmotes.length)];
-
 export class Messages {
   //generic
   static readonly INTERACTION_TIMEOUT: T =
@@ -25,7 +14,7 @@ export class Messages {
   static WORKING(): T {
     return {
       title: "Working on it...",
-      description: getRandomLoadingEmote(),
+      description: "<:_tatra_symbol_loading:1277399423768330301>"
     };
   }
   static readonly RATE_LIMIT_EXCEEDED: T =

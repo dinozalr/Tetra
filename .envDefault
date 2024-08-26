@@ -4,8 +4,14 @@ discordBotId=
 oauthClientId=
 oauthClientSecret=
 
-inviteLink=
+inviteLink=https://discord.com/oauth2/authorize?client_id=1277375210827550750&permissions=413390915648&scope=applications.commands+bot
+
 twitchClientId=
 twitchSecretKey=
-env=
+node_env=
 secretPhrase=
+
+tenorApiKey=
+imgurClientId=
+
+DATABASE_URL="mysql://[username]:[password]@localhost:3306/tatra"

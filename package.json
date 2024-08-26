@@ -1,5 +1,5 @@
 {
-  "name": "tetra",
+  "name": "tatra",
   "version": "1.2.0",
   "description": "Fun-utility bot that focuses primarly on managing emotes with seamless import from platforms such like 7TV, BTTV, FFZ and Twitch.",
   "main": "src/index.ts",
@@ -73,7 +73,7 @@
     "sharp": "^0.31.1",
     "twitter-downloader": "^1.0.0",
     "videoshow": "^0.1.12",
-    "youtube-dl-exec": "^2.5.6",
+    "youtube-dl-exec": "^3.0.7",
     "zod": "^3.21.4"
   }
 }

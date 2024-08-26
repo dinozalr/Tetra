@@ -41,7 +41,7 @@ const prepareEmote = async (
       await feedback.error(
         `Emote exceeded maximum size supported currently with custom files (${prettyBytes(
           maxSupportedSize
-        )}) by Tetra.`
+        )}) by Tatra.`
       );
       return;
     }

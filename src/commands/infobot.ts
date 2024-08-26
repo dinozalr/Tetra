@@ -17,7 +17,7 @@ const infobot = {
   async execute(interaction: CommandInteraction, client: DiscordBot) {
     const githubRepo = "https://github.com/ike-gg/Tetra";
     const githubAuthor = "https://github.com/ike-gg";
-    const discordAuthor = "https://discordapp.com/users/224978978362884096/";
+    const discordAuthor = "https://discordapp.com/users/475449181255893002/";
     const activeGuilds = client.guilds.cache.size;
     const reachableUsers = client.guilds.cache.reduce(
       (a, g) => a + g.memberCount,
@@ -27,7 +27,7 @@ const infobot = {
     const dcInvLink = hyperlink("Click here!", env.inviteLink);
     const ghRepoLink = hyperlink("@ike-gg/Tetra", githubRepo);
     const ghAuthorLink = hyperlink("@ike-gg", githubAuthor);
-    const dcAuthorLink = hyperlink("ike", discordAuthor);
+    const dcAuthorLink = hyperlink("demonzz1", discordAuthor);
 
     const componentsRow = new ActionRowBuilder<ButtonBuilder>();
     componentsRow.addComponents(
@@ -75,7 +75,7 @@ const infobot = {
       value: ghAuthorLink,
       inline: true,
     });
-    messagePayload.setImage("https://i.imgur.com/vkJxLA2.png");
+    messagePayload.setImage("https://i.imgur.com/0LWuTnZ.png");
     messagePayload.setColor(0x000000);
     await interaction.reply({
       embeds: [messagePayload],

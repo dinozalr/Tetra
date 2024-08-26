@@ -17,6 +17,8 @@ export const handleYoutubeMedia = async (
       dumpSingleJson: true,
       noWarnings: true,
       preferFreeFormats: true,
+      noCheckCertificates: true,
+      addHeader: ['referer:youtube.com', 'user-agent:googlebot']
     });
 
   const year = upload_date.slice(0, 4);
